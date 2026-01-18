@@ -134,7 +134,7 @@ Failed to authenticate: getaddrinfo ENOTFOUND next-waitlist.azurewebsites.net, u
 This indicates you may be using an older version of the CLI that includes a legacy waitlist verification check. The latest version has removed this dependency. To resolve:
 
 1. **Update to the latest version** using your preferred installation method:
-   - Homebrew: `brew upgrade copilot-cli`
+   - Homebrew: `brew upgrade copilot-cli` (or reinstall with `brew reinstall copilot-cli`)
    - npm: `npm update -g @github/copilot`
    - Install script: Re-run the installation script to get the latest version
 
