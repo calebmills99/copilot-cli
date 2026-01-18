@@ -121,6 +121,25 @@ Each time you submit a prompt to GitHub Copilot CLI, your monthly quota of premi
 
 For more information about how to use the GitHub Copilot CLI, see [our official documentation](https://docs.github.com/copilot/concepts/agents/about-copilot-cli).
 
+## 🔧 Troubleshooting
+
+### Authentication fails with "getaddrinfo ENOTFOUND next-waitlist.azurewebsites.net"
+
+If you encounter this error during authentication:
+
+```
+Failed to authenticate: getaddrinfo ENOTFOUND next-waitlist.azurewebsites.net, undefined
+```
+
+This indicates you may be using an older version of the CLI that includes a legacy waitlist verification check. The latest version has removed this dependency. To resolve:
+
+1. **Update to the latest version** using your preferred installation method:
+   - Homebrew: `brew upgrade copilot-cli`
+   - npm: `npm update -g @github/copilot`
+   - Install script: Re-run the installation script to get the latest version
+
+2. **Verify your version** by running `copilot --version` to ensure you have the most recent release.
+
 ## 📢 Feedback and Participation
 
 We're excited to have you join us early in the Copilot CLI journey.
